@@ -1,0 +1,97 @@
+2020/04/21-10:58:06.403509 7f805312f700 RocksDB version: 6.9.0
+2020/04/21-10:58:06.403578 7f805312f700 Git sha rocksdb_build_git_sha:
+2020/04/21-10:58:06.403583 7f805312f700 Compile date Apr 13 2020
+2020/04/21-10:58:06.403585 7f805312f700 DB SUMMARY
+2020/04/21-10:58:06.403634 7f805312f700 CURRENT file:  CURRENT
+2020/04/21-10:58:06.403637 7f805312f700 IDENTITY file:  IDENTITY
+2020/04/21-10:58:06.403644 7f805312f700 MANIFEST file:  MANIFEST-000014 size: 436 Bytes
+2020/04/21-10:58:06.403648 7f805312f700 SST files in ../Phase1_tyngam/db/Relation dir, Total Num: 2, files: 000004.sst 000013.sst 
+2020/04/21-10:58:06.403650 7f805312f700 Write Ahead Log file in ../Phase1_tyngam/db/Relation: 000015.log size: 0 ; 
+2020/04/21-10:58:06.403653 7f805312f700                         Options.error_if_exists: 0
+2020/04/21-10:58:06.403655 7f805312f700                       Options.create_if_missing: 1
+2020/04/21-10:58:06.403656 7f805312f700                         Options.paranoid_checks: 1
+2020/04/21-10:58:06.403657 7f805312f700                                     Options.env: 0x7f801dad0de0
+2020/04/21-10:58:06.403659 7f805312f700                                      Options.fs: Posix File System
+2020/04/21-10:58:06.403660 7f805312f700                                Options.info_log: 0x7f804cdcaed0
+2020/04/21-10:58:06.403662 7f805312f700                Options.max_file_opening_threads: 16
+2020/04/21-10:58:06.403663 7f805312f700                              Options.statistics: (nil)
+2020/04/21-10:58:06.403665 7f805312f700                               Options.use_fsync: 0
+2020/04/21-10:58:06.403666 7f805312f700                       Options.max_log_file_size: 0
+2020/04/21-10:58:06.403667 7f805312f700                  Options.max_manifest_file_size: 1073741824
+2020/04/21-10:58:06.403668 7f805312f700                   Options.log_file_time_to_roll: 0
+2020/04/21-10:58:06.403670 7f805312f700                       Options.keep_log_file_num: 1000
+2020/04/21-10:58:06.403671 7f805312f700                    Options.recycle_log_file_num: 0
+2020/04/21-10:58:06.403672 7f805312f700                         Options.allow_fallocate: 1
+2020/04/21-10:58:06.403673 7f805312f700                        Options.allow_mmap_reads: 0
+2020/04/21-10:58:06.403675 7f805312f700                       Options.allow_mmap_writes: 0
+2020/04/21-10:58:06.403676 7f805312f700                        Options.use_direct_reads: 0
+2020/04/21-10:58:06.403677 7f805312f700                        Options.use_direct_io_for_flush_and_compaction: 0
+2020/04/21-10:58:06.403678 7f805312f700          Options.create_missing_column_families: 0
+2020/04/21-10:58:06.403679 7f805312f700                              Options.db_log_dir: 
+2020/04/21-10:58:06.403681 7f805312f700                                 Options.wal_dir: ../Phase1_tyngam/db/Relation
+2020/04/21-10:58:06.403682 7f805312f700                Options.table_cache_numshardbits: 6
+2020/04/21-10:58:06.403683 7f805312f700                      Options.max_subcompactions: 1
+2020/04/21-10:58:06.403684 7f805312f700                  Options.max_background_flushes: -1
+2020/04/21-10:58:06.403686 7f805312f700                         Options.WAL_ttl_seconds: 0
+2020/04/21-10:58:06.403687 7f805312f700                       Options.WAL_size_limit_MB: 0
+2020/04/21-10:58:06.403688 7f805312f700                        Options.max_write_batch_group_size_bytes: 1048576
+2020/04/21-10:58:06.403689 7f805312f700             Options.manifest_preallocation_size: 4194304
+2020/04/21-10:58:06.403691 7f805312f700                     Options.is_fd_close_on_exec: 1
+2020/04/21-10:58:06.403692 7f805312f700                   Options.advise_random_on_open: 1
+2020/04/21-10:58:06.403693 7f805312f700                    Options.db_write_buffer_size: 0
+2020/04/21-10:58:06.403694 7f805312f700                    Options.write_buffer_manager: 0x7f804cdca270
+2020/04/21-10:58:06.403695 7f805312f700         Options.access_hint_on_compaction_start: 1
+2020/04/21-10:58:06.403696 7f805312f700  Options.new_table_reader_for_compaction_inputs: 0
+2020/04/21-10:58:06.403698 7f805312f700           Options.random_access_max_buffer_size: 1048576
+2020/04/21-10:58:06.403699 7f805312f700                      Options.use_adaptive_mutex: 0
+2020/04/21-10:58:06.403713 7f805312f700                            Options.rate_limiter: (nil)
+2020/04/21-10:58:06.403715 7f805312f700     Options.sst_file_manager.rate_bytes_per_sec: 0
+2020/04/21-10:58:06.403717 7f805312f700                       Options.wal_recovery_mode: 2
+2020/04/21-10:58:06.403718 7f805312f700                  Options.enable_thread_tracking: 0
+2020/04/21-10:58:06.403719 7f805312f700                  Options.enable_pipelined_write: 0
+2020/04/21-10:58:06.403720 7f805312f700                  Options.unordered_write: 0
+2020/04/21-10:58:06.403721 7f805312f700         Options.allow_concurrent_memtable_write: 1
+2020/04/21-10:58:06.403723 7f805312f700      Options.enable_write_thread_adaptive_yield: 1
+2020/04/21-10:58:06.403724 7f805312f700             Options.write_thread_max_yield_usec: 100
+2020/04/21-10:58:06.403725 7f805312f700            Options.write_thread_slow_yield_usec: 3
+2020/04/21-10:58:06.403726 7f805312f700                               Options.row_cache: None
+2020/04/21-10:58:06.403727 7f805312f700                              Options.wal_filter: None
+2020/04/21-10:58:06.403729 7f805312f700             Options.avoid_flush_during_recovery: 0
+2020/04/21-10:58:06.403730 7f805312f700             Options.allow_ingest_behind: 0
+2020/04/21-10:58:06.403731 7f805312f700             Options.preserve_deletes: 0
+2020/04/21-10:58:06.403733 7f805312f700             Options.two_write_queues: 0
+2020/04/21-10:58:06.403734 7f805312f700             Options.manual_wal_flush: 0
+2020/04/21-10:58:06.403735 7f805312f700             Options.atomic_flush: 0
+2020/04/21-10:58:06.403736 7f805312f700             Options.avoid_unnecessary_blocking_io: 0
+2020/04/21-10:58:06.403737 7f805312f700                 Options.persist_stats_to_disk: 0
+2020/04/21-10:58:06.403739 7f805312f700                 Options.write_dbid_to_manifest: 0
+2020/04/21-10:58:06.403740 7f805312f700                 Options.log_readahead_size: 0
+2020/04/21-10:58:06.403742 7f805312f700                 Options.file_checksum_gen_factory: Unknown
+2020/04/21-10:58:06.403743 7f805312f700                 Options.best_efforts_recovery: 0
+2020/04/21-10:58:06.403744 7f805312f700             Options.max_background_jobs: 2
+2020/04/21-10:58:06.403746 7f805312f700             Options.max_background_compactions: -1
+2020/04/21-10:58:06.403747 7f805312f700             Options.avoid_flush_during_shutdown: 0
+2020/04/21-10:58:06.403748 7f805312f700           Options.writable_file_max_buffer_size: 1048576
+2020/04/21-10:58:06.403749 7f805312f700             Options.delayed_write_rate : 16777216
+2020/04/21-10:58:06.403751 7f805312f700             Options.max_total_wal_size: 0
+2020/04/21-10:58:06.403752 7f805312f700             Options.delete_obsolete_files_period_micros: 21600000000
+2020/04/21-10:58:06.403753 7f805312f700                   Options.stats_dump_period_sec: 600
+2020/04/21-10:58:06.403755 7f805312f700                 Options.stats_persist_period_sec: 600
+2020/04/21-10:58:06.403756 7f805312f700                 Options.stats_history_buffer_size: 1048576
+2020/04/21-10:58:06.403757 7f805312f700                          Options.max_open_files: -1
+2020/04/21-10:58:06.403758 7f805312f700                          Options.bytes_per_sync: 0
+2020/04/21-10:58:06.403760 7f805312f700                      Options.wal_bytes_per_sync: 0
+2020/04/21-10:58:06.403761 7f805312f700                   Options.strict_bytes_per_sync: 0
+2020/04/21-10:58:06.403762 7f805312f700       Options.compaction_readahead_size: 0
+2020/04/21-10:58:06.403763 7f805312f700 Compression algorithms supported:
+2020/04/21-10:58:06.403765 7f805312f700 	kZSTDNotFinalCompression supported: 0
+2020/04/21-10:58:06.403766 7f805312f700 	kZSTD supported: 0
+2020/04/21-10:58:06.403768 7f805312f700 	kXpressCompression supported: 0
+2020/04/21-10:58:06.403769 7f805312f700 	kLZ4HCCompression supported: 0
+2020/04/21-10:58:06.403771 7f805312f700 	kLZ4Compression supported: 0
+2020/04/21-10:58:06.403773 7f805312f700 	kBZip2Compression supported: 0
+2020/04/21-10:58:06.403774 7f805312f700 	kZlibCompression supported: 0
+2020/04/21-10:58:06.403783 7f805312f700 	kSnappyCompression supported: 0
+2020/04/21-10:58:06.403789 7f805312f700 Fast CRC32 supported: Supported on x86
+2020/04/21-10:58:06.404005 7f805312f700 [/db_impl/db_impl.cc:401] Shutdown: canceling all background work
+2020/04/21-10:58:06.404047 7f805312f700 [/db_impl/db_impl.cc:577] Shutdown complete
