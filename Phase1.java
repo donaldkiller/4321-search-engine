@@ -28,6 +28,14 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.MalformedURLException;
 
+import java.util.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+//import java.util.Date;
+//import java.util.Vector;
+//import java.util.StringTokenizer;
+//import java.util.List;
+//import java.util.ArrayList;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -246,6 +254,8 @@ public class Phase1{
 				//System.out.println(" : status " + status + "\n---------------------------");
 				relation_db.put(links.get(i).getBytes(), status.getBytes());
 			}else{
+				//System.out.println(links.get(i) + " has the relation as \n" + new String(relation_db.get(links.get(i).getBytes())));
+				//System.out.println("---------------------------");
 			}
 		}
 	}
@@ -307,6 +317,7 @@ public class Phase1{
 			
 
 			try (final DBOptions options_infodb = new DBOptions().setCreateIfMissing(true).setCreateMissingColumnFamilies(true);
+				final RocksDB info_db = RocksDB.open(options_infodb, "../Phase1/db/Info", cfDescriptors, columnFamilyHandleList)) {
 					
 				try{
 					String url_r = removeFront(url);
@@ -359,9 +370,11 @@ public class Phase1{
 			
 
 			try (final DBOptions options_infodb = new DBOptions().setCreateIfMissing(true).setCreateMissingColumnFamilies(true);
+				final RocksDB info_db = RocksDB.open(options_infodb, "../Phase1/db/Info", cfDescriptors, columnFamilyHandleList)) {
 					
 				try{
 					String url_r = removeFront(link);
+					DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 					if(info_db.get(url.getBytes()) == null){
 						return "not registered";
 					}else{
@@ -398,6 +411,8 @@ public class Phase1{
 		//Prints Title to Terminal and FileWrite
 		String title = Jsoup.connect(child.url).get().title();
 		printWriter.println(title);			
+		//System.out.println(title);
+		//System.out.println(master.url);
 		
 		
 		//Prints URL to Terminal and FileWrite
@@ -424,6 +439,8 @@ public class Phase1{
 		//Prints Size to Terminal and FileWrite
 		
 		switch(size_format){
+			case 0: addInfo(master.url, title, mod, size, -1); break;	// Size mentionned in URL Header
+			case 1: addInfo(master.url, title, mod, -1, size); break; 	// Size not mentionned in URL Header, Count
 			default: break;
 		}
 
